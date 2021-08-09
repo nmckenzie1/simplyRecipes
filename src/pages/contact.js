@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "../components/Layout"
-function Home() {
+function Contact() {
   return (
     <Layout>
-      <h1>Home page</h1>
+      <h1>Contact page</h1>
     </Layout>
   )
 }
-export default Home
+export default Contact
