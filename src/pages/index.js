@@ -1,11 +1,13 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
-
+import AllRecipes from "../components/AllRecipes"
+import SearchEngineOpt from "../components/SearchEngineOpt"
 function Home() {
   return (
     <Layout>
-      <main className="page">
+      <SearchEngineOpt title="Home" />
+      <main>
         <header className="hero">
           <StaticImage
             src="../assets/images/main.jpeg"
@@ -15,13 +17,14 @@ function Home() {
             layout="fullWidth"
           ></StaticImage>
           <div className="hero-container">
-            <hero className="hero-text">
+            <div className="hero-text">
               <h1>simply recipes</h1>
               <h2>no fluff, just recipes</h2>
-            </hero>
+            </div>
           </div>
         </header>
       </main>
+      <AllRecipes />
     </Layout>
   )
 }
